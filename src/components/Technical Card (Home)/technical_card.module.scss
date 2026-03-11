@@ -1,0 +1,47 @@
+@use "../../styles/variables";
+@use "../../styles/breakpoints";
+
+.technical_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid variables.$border-main;
+    background-color: variables.$background-secondary;
+    flex: 1 1 200px;
+    max-width: 100%;
+
+    @include breakpoints.respond-to(md) {
+        max-width: calc(50% - 12px);
+    }
+
+    @include breakpoints.respond-to(lg) {
+        max-width: calc(33.333% - 16px);
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: bold;
+        color: variables.$text-heading;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 16px;
+
+        &__item {
+            font-size: 14px;
+            color: variables.$text-body;
+        }
+    }
+}

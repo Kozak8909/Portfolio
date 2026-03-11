@@ -1,0 +1,22 @@
+@use '../../styles/variables' as variables;
+
+.technical_card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: variables.$background-secondary;
+    border: 1px solid variables.$border-main;
+    border-radius: 8px;
+    padding: 16px;
+
+    &__title {
+        color: variables.$text-light;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    &__pill {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

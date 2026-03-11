@@ -1,0 +1,21 @@
+@use "variables";
+
+.tech_pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+
+    &__pill {
+        border: 1px solid variables.$border-main;
+        background-color: variables.$background-main;
+        color: variables.$color-text-secondary;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+}

@@ -1,0 +1,28 @@
+@use "variables";
+@use "breakpoints";
+
+section {
+    padding: 16px;
+    margin: 24px 16px;
+
+    @include breakpoints.respond-to(md) {
+        padding: 24px;
+        margin: 32px 24px;
+    }
+
+    @include breakpoints.respond-to(lg) {
+        padding: 40px;
+        padding-bottom: 0;
+        margin: 48px 40px;
+    }
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: variables.$text-heading;
+
+    @include breakpoints.respond-to(md) {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,37 @@
+@use "variables";
+@use "breakpoints";
+@use "links";
+@use "sections";
+@use "button";
+@use "tech_pills";
+@use "nowrap";
+@use "highlight";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background-color: #102216;
+    color: #94A3B8;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.page-container {
+    width: 100%;
+
+    @include breakpoints.respond-to(lg) {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+}

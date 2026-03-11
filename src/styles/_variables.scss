@@ -1,0 +1,37 @@
+// Core Palette
+$color-primary: #102216;
+$color-secondary: #1F402A;
+$color-accent: #13EC5B;
+$color-accent-light: #2DD4BF;
+$color-text-main: #94A3B8;
+$color-text-secondary: #CBD5E1;
+$color-white: #fff;
+$color-shadow-glow: #59e788eb;
+
+// Semantic Usage
+$background-main: $color-primary;
+$background-secondary: #162E1E;
+$border-main: $color-secondary;
+
+$text-heading: $color-white;
+$text-body: $color-text-main;
+$text-highlight: $color-accent;
+$text-inverse: $color-primary;
+$text-light: #92C9A4;
+
+$button-filled-bg: $color-accent;
+$button-filled-hover-bg: lighten($color-accent, 10%);
+$button-filled-text: $color-primary;
+$button-shadow: $color-shadow-glow;
+$button-filled-hover-shadow: rgba($color-accent, 0.3);
+$button-outlined-border: $color-secondary;
+$button-outlined-text: $color-white;
+$button-outlined-hover-bg: rgba($color-secondary, 0.5);
+$button-outlined-hover-border: $color-accent;
+$button-outlined-hover-text: $color-accent;
+$button-outlined-hover-shadow: rgba($color-accent, 0.3);
+
+$badge-bg: rgba($color-accent, 0.1);
+$badge-text: $color-accent;
+
+$gradient-highlight: linear-gradient(to right, $color-accent, $color-accent-light);
