@@ -37,15 +37,13 @@
         gap: 16px;
         flex-wrap: nowrap;
         overflow-x: auto;
-        padding-bottom: 8px; // Padding for scrollbar space if visible
+        padding-bottom: 8px;
 
-        // Ensure the last item has right padding when completely scrolled
         &::after {
             content: '';
             padding-right: 16px;
         }
 
-        // Hide scrollbar for cleaner look
         scrollbar-width: none;
 
         &::-webkit-scrollbar {
@@ -69,7 +67,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: bold;
-            flex-shrink: 0; // Prevent buttons from squishing text
+            flex-shrink: 0;
 
             &:hover {
                 background-color: variables.$button-outlined-hover-bg;

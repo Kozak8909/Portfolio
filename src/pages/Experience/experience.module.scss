@@ -49,10 +49,9 @@
 .content_container {
     display: flex;
     flex-direction: column;
-    gap: 24px; // Reduced gap for mobile
+    gap: 24px;
 
     @include breakpoints.respond-to(lg) {
-        // Retain column on md to prevent spaghetti
         flex-direction: row;
         align-items: flex-start;
         gap: 48px;

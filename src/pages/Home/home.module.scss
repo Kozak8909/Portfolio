@@ -57,18 +57,18 @@
         border-radius: 16px;
         overflow: hidden;
         width: 100%;
-        display: none; // Hide on mobile & tablet
+        display: none;
         justify-content: center;
 
         img {
             width: 100%;
             height: auto;
             display: block;
-            object-fit: contain; // Prevent clipping
+            object-fit: contain;
         }
 
         @include breakpoints.respond-to(lg) {
-            display: flex; // Restore on desktop
+            display: flex;
             width: 40%;
             max-width: 50%;
             flex-shrink: 0;

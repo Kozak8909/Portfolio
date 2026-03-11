@@ -7,19 +7,18 @@
     gap: 24px;
     width: 100%;
 
-    // Prevent inputs and form from blowing past the flex container
     box-sizing: border-box;
 
     @include breakpoints.respond-to(md) {
         max-width: 620px;
-        flex: 1; // Allow taking remaining space safely
+        flex: 1;
     }
 
     &__personal {
         display: flex;
         flex-direction: column;
         gap: 24px;
-        width: 100%; // Ensure personal fields wrapper respects width
+        width: 100%;
 
         @include breakpoints.respond-to(md) {
             flex-direction: row;
@@ -40,7 +39,7 @@
         border: 1px solid variables.$border-main;
         font-size: 16px;
         color: variables.$text-body;
-        width: 100%; // Ensure inputs respect wrapper
+        width: 100%;
     }
 
     &__textarea {
@@ -52,7 +51,7 @@
         height: 160px;
         font-size: 16px;
         color: variables.$text-body;
-        width: 100%; // Ensure textarea respects wrapper
+        width: 100%;
 
         &::placeholder {
             font-family: 'Inter', sans-serif;

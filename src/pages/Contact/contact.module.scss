@@ -24,12 +24,12 @@
 
     @include breakpoints.respond-to(md) {
         max-width: 320px;
-        flex: 0 0 320px; // Maintain firmer, narrower sizing on tablet to give form space
+        flex: 0 0 320px;
     }
 
     @include breakpoints.respond-to(lg) {
         max-width: 400px;
-        flex: 0 0 400px; // Restore balanced width on PC
+        flex: 0 0 400px;
     }
 
     &__info {
