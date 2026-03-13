@@ -3,6 +3,7 @@ import recipeAppImage from '../img/RecipeAppImage.png';
 import libraryImage from '../img/LibraryImage.png';
 import bakeryImage from '../img/BakeryImage.png';
 import reactTaskImage from '../img/ReactTaskImage.png';
+import puppyYogaImage from '../img/PuppyYogaImage.png';
 
 export const projectsData = [
     {
@@ -35,6 +36,20 @@ export const projectsData = [
     },
     {
         id: 3,
+        image: puppyYogaImage,
+        tags: ["Web", "E-commerce", "Shopify"],
+        title: "High-Conversion E-Commerce & Booking Ecosystem",
+        shortTitle: "E-Commerce & Booking Platform",
+        description: "A premium, customer-centric digital platform for Puppy Yoga by PupCo, built on Shopify. This project demonstrates the ability to adapt a major e-commerce engine into a versatile service-based ecosystem, seamlessly integrating automated event ticketing, private party bookings, and real-time social proof.",
+        shortDescription: "A premium, customer-centric digital platform for Puppy Yoga by PupCo, built on Shopify.",
+        techStack: ["Shopify", "Liquid", "CSS", "JavaScript"],
+        techStackShort: ["SPF", "LQD", "CSS", "JS"],
+        category: "Web Dev",
+        badge: "E-commerce",
+        link: "https://puppyyoga.net/"
+    },
+    {
+        id: 4,
         image: reactTaskImage,
         tags: ["Web", "Frontend", "React"],
         title: "Full-Cycle React Productivity Platform",
@@ -48,7 +63,7 @@ export const projectsData = [
         link: "https://github.com/Kozak8909/React-To-Do-List"
     },
     {
-        id: 4,
+        id: 5,
         image: bakeryImage,
         tags: ["Web", "Frontend", "HTML/SCSS"],
         title: "Modern Web Landing Page",
@@ -62,7 +77,7 @@ export const projectsData = [
         link: "https://github.com/Kozak8909/HTML-CSS-course"
     },
     {
-        id: 5,
+        id: 6,
         image: codeImage,
         tags: ["Web", "Frontend", "JS"],
         title: "Algorithmic Logic & Performance Patterns",

@@ -7,11 +7,15 @@
 }
 
 .header {
+    background-color: variables.$background-main;
     padding: 16px 40px;
     border-bottom: 1px solid variables.$border-main;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     &__container {
         display: flex;
